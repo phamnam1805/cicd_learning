@@ -21,7 +21,6 @@ jobs:
                   PORT: ${{ vars.PORT }}
               run: |
                   echo "PORT=$PORT" 
-                  env
 
             - name: Run tests
               run: npm test

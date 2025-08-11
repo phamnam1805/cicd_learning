@@ -21,8 +21,8 @@ describe('AppController', () => {
         it('Should return "Good Bye!"', () => {
             expect(appController.getGoodBye()).toBe('Good Bye!');
         });
-        // it('PORT should be 8000', () => {
-        //     expect(process.env.PORT).toBe('8000');
-        // });
+        it('PORT should be 8000', () => {
+            expect(process.env.PORT).toBe('8000');
+        });
     });
 });
