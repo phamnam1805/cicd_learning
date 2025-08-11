@@ -2,6 +2,7 @@ name: CICD_learning
 on: [push]
 jobs:
     run_tests:
+        environment: test environment
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
