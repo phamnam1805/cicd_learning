@@ -17,7 +17,7 @@ jobs:
             
             - name: Test GitHub Secrets and Variables
               run: |
-                  echo "PORT=${{ secrets.PORT }}" >> $GITHUB_ENV
+                  echo "PORT=${{ vars.PORT }}" >> $GITHUB_ENV
 
             - name: Run tests
               run: npm test
